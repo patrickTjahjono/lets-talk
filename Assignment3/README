@@ -1,0 +1,31 @@
+ASSIGNMENT 3, Ambrosius Patrick Tjahjono
+
+this program will let terminal to communicate with each other by speciying the ports used in this format "lets-talk 'my port number/source' localhost 'destination port number'"
+
+required lib/commandline in terminal:
+sudo apt-get install libreadline-dev
+
+SOURCE WEB:
+https://www.geeksforgeeks.org/socket-programming-cc/
+http://beej.us/guide/bgnet/pdf/bgnet_usl_c_1.pdf
+https://linux.die.net/man/3/inet_ntoa
+https://www.geeksforgeeks.org/socket-programming-cc/
+https://www.geeksforgeeks.org/mutex-lock-for-linux-thread-synchronization/
+https://www.geeksforgeeks.org/condition-wait-signal-multi-threading/
+https://github.com/junha3284/ChattingApplication/blob/master/sTalk.c
+https://codereview.stackexchange.com/questions/195766/a-send-and-receive-udp-node-in-c
+https://github.com/nikhilroxtomar/Chatroom-in-C
+
+Discussed with:
+Jason sebastian on how to check status and socket connection
+Felic lionardo on how to cancel threads and memmory loss
+
+To Run use the command below:
+1. make
+2. ./lets-talk 6000 localhost 6001 
+	on the first terminal
+3. ./lets-talk 6000 localhost 6001
+	in the second terminal on the same folder
+
+start typing use double enter to send the message, this is done so that the message can include multiple lines even paragraphs. Use !status to check if the destination terminal is connected.
+
